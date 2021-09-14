@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+</head>
+<body>
+<a href="/">Go home</a>
+<ul>
+    <th:block th:each="operation : ${userOperations}">
+        <li th:utext="${operation}"></li>
+    </th:block>
+</ul>
+</body>
+</html>
